@@ -2,53 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/hugo-blog/</loc>
+    <loc>https://karthi981.github.io/hugo-blog/</loc>
     <lastmod>2025-01-30T12:07:24+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-blog/categories/</loc>
+    <loc>https://karthi981.github.io/hugo-blog/posts/</loc>
     <lastmod>2025-01-30T12:07:24+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-blog/tags/git/</loc>
-    <lastmod>2025-01-30T12:07:24+05:30</lastmod>
+    <loc>https://karthi981.github.io/hugo-blog/archives/</loc>
   </url><url>
-    <loc>http://localhost:1313/hugo-blog/tags/githib-pages/</loc>
-    <lastmod>2025-01-30T12:07:24+05:30</lastmod>
+    <loc>https://karthi981.github.io/hugo-blog/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/hugo-blog/tags/github/</loc>
-    <lastmod>2025-01-30T12:07:24+05:30</lastmod>
+    <loc>https://karthi981.github.io/hugo-blog/search/</loc>
   </url><url>
-    <loc>http://localhost:1313/hugo-blog/tags/github-pages/</loc>
-    <lastmod>2025-01-30T12:07:24+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hugo-blog/tags/hugo/</loc>
-    <lastmod>2025-01-30T12:07:24+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hugo-blog/posts/github-actions/</loc>
-    <lastmod>2025-01-30T12:07:24+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hugo-blog/posts/hugo-setup/</loc>
-    <lastmod>2025-01-30T12:07:24+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hugo-blog/tags/papermod/</loc>
-    <lastmod>2025-01-30T12:07:24+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hugo-blog/posts/</loc>
-    <lastmod>2025-01-30T12:07:24+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hugo-blog/tags/</loc>
-    <lastmod>2025-01-30T12:07:24+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hugo-blog/categories/tech/</loc>
-    <lastmod>2025-01-30T12:07:24+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hugo-blog/tags/theme/</loc>
-    <lastmod>2025-01-30T12:07:24+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hugo-blog/categories/tutorial/</loc>
-    <lastmod>2025-01-30T12:07:24+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hugo-blog/archives/</loc>
-  </url><url>
-    <loc>http://localhost:1313/hugo-blog/search/</loc>
+    <loc>https://karthi981.github.io/hugo-blog/tags/</loc>
   </url>
 </urlset>

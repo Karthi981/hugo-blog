@@ -2,49 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Blog-OS</title>
-    <link>http://localhost:1313/hugo-blog/posts/</link>
+    <link>https://karthi981.github.io/hugo-blog/posts/</link>
     <description>Recent content in Posts on Blog-OS</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jan 2025 12:07:24 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/hugo-blog/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hugo Deployment: Via Github pages and workflows</title>
-      <link>http://localhost:1313/hugo-blog/posts/github-actions/</link>
-      <pubDate>Thu, 30 Jan 2025 12:07:24 +0530</pubDate>
-      <guid>http://localhost:1313/hugo-blog/posts/github-actions/</guid>
-      <description>&lt;h1 id=&#34;hugo-deployment-via-github-pages-and-workflows&#34;&gt;Hugo Deployment: Via Github pages and workflows&lt;/h1&gt;
-&lt;p&gt;Hugo is a powerful static site generator that allows you to create fast, customizable websites with ease. In this guide, we’ll walk through installing Hugo, setting up the PaperMod theme, and deploying your site to GitHub Pages.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;1-deploy-to-github-pages&#34;&gt;1. Deploy to GitHub Pages&lt;/h2&gt;
-&lt;h3 id=&#34;step-0-create-a-new-branch-in-the-repository&#34;&gt;&lt;strong&gt;Step 0: Create a new branch in the repository&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Manually add the gh-pages branch to the repository; otherwise the github actions will throw an error&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hugo Made Easy: Install, Theme:PaperMod &amp; GitHub Pages Deployment</title>
-      <link>http://localhost:1313/hugo-blog/posts/hugo-setup/</link>
-      <pubDate>Thu, 30 Jan 2025 12:07:24 +0530</pubDate>
-      <guid>http://localhost:1313/hugo-blog/posts/hugo-setup/</guid>
-      <description>&lt;h1 id=&#34;hugo-made-easy-install-theme-papermod--github-pages-deployment&#34;&gt;Hugo Made Easy: Install, Theme: PaperMod &amp;amp; GitHub Pages Deployment&lt;/h1&gt;
-&lt;p&gt;Hugo is a powerful static site generator that allows you to create fast, customizable websites with ease. In this guide, we’ll walk through installing Hugo, setting up the PaperMod theme, and deploying your site to GitHub Pages.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;1-install-hugo-extended-version&#34;&gt;1. Install Hugo (Extended Version)&lt;/h2&gt;
-&lt;h3 id=&#34;windows&#34;&gt;&lt;strong&gt;Windows&lt;/strong&gt;&lt;/h3&gt;
-&lt;h4 id=&#34;using-chocolatey-recommended&#34;&gt;&lt;strong&gt;Using Chocolatey (Recommended)&lt;/strong&gt;&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;choco install hugo-extended -y
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;manual-installation&#34;&gt;&lt;strong&gt;Manual Installation&lt;/strong&gt;&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Download the latest &lt;strong&gt;Hugo Extended&lt;/strong&gt; version from &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;GitHub Releases&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Extract the archive and place &lt;code&gt;hugo.exe&lt;/code&gt; in a folder within your system PATH (e.g., &lt;code&gt;C:\Program Files\Hugo&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Verify installation:
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo version
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;macos&#34;&gt;&lt;strong&gt;MacOS&lt;/strong&gt;&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install hugo
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;linux-debianubuntu&#34;&gt;&lt;strong&gt;Linux (Debian/Ubuntu)&lt;/strong&gt;&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install hugo
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Verify the installation:&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://karthi981.github.io/hugo-blog/posts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

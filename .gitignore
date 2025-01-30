@@ -1,3 +1,5 @@
+# Ignore Hugo's public directory (build output)
+public/
 
 # Ignore content from specific directories (e.g., drafts or private notes)
 content/drafts/
