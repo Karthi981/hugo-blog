@@ -1,5 +1,4 @@
 name: Publish to GH Pages
-
 on:
   push:
     branches:
@@ -9,12 +8,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive # Changed from 'true' to 'recursive'
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -23,16 +21,25 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Build Site
-        run: hugo --minify
+      - name: Clean Cache
+        run: |
+          rm -rf resources/_gen
+          rm -rf public
+          rm -rf .hugo_build.lock
 
-      - name: Debug Build Output
-        run: ls -lah public # Check if posts are generated
+      - name: Update theme submodule
+        run: |
+          git submodule update --init --recursive
+          git submodule update --remote --merge
+
+      - name: Build Site
+        run: hugo --minify --gc
 
       - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           commit_message: "Automated deployment: $(date -u +'%Y-%m-%d %H:%M:%S')"
-          force_orphan: true # Ensures a fresh deployment each time
+          force_orphan: true
