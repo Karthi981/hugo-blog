@@ -14,23 +14,25 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          submodules: true # Ensures themes are included
-          fetch-depth: 0 # Fetch all history for proper Hugo module handling
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest' # Always fetch latest Hugo version
-          extended: true # Required for SCSS/Sass support
+          hugo-version: 'latest'
+          extended: true
 
       - name: Build Site
         run: hugo --minify
 
+      - name: Debug Build Output
+        run: ls -lah public # Check if posts are generated
+
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           commit_message: "Automated deployment: $(date -u +'%Y-%m-%d %H:%M:%S')"
-          force_orphan: true # Ensures only the latest build is kept
+          force_orphan: true # Ensures a fresh deployment each time
