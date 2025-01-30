@@ -1,6 +1,5 @@
 +++
 date = '2025-01-30T12:07:24+05:30'
-draft = true
 title = 'Hugo Deployment: Via Github pages and workflows'
 author = 'Karthik Raja'
 tags = ['Git', 'GitHub', 'GitHib Pages']

@@ -1,6 +1,5 @@
 +++
 date = '2025-01-30T12:07:24+05:30'
-draft = true
 title = 'Hugo Made Easy: Install, Theme:PaperMod & GitHub Pages Deployment'
 author = 'Karthik Raja'
 tags = ['Hugo', 'Theme', 'PaperMod', 'GitHub Pages']
