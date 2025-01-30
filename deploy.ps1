@@ -6,6 +6,14 @@ hugo --minify
 
 $DEPLOY_BRANCH = "gh-pages"
 
+# Store the public folder contents in a temporary location
+Write-Host "Preserving public folder contents..."
+$tempPath = Join-Path $env:TEMP "hugo-public-temp"
+if (Test-Path $tempPath) {
+    Remove-Item -Recurse -Force $tempPath
+}
+Copy-Item -Path "public" -Destination $tempPath -Recurse
+
 # Check if 'gh-pages' exists
 if (git branch --list $DEPLOY_BRANCH) {
     Write-Host "Switching to existing $DEPLOY_BRANCH branch..."
@@ -18,16 +26,16 @@ if (git branch --list $DEPLOY_BRANCH) {
 }
 
 # Only clean existing files if we're on gh-pages branch
-if (git rev-parse --abbrev-ref HEAD -eq $DEPLOY_BRANCH) {
+if ((git rev-parse --abbrev-ref HEAD) -eq $DEPLOY_BRANCH) {
     Write-Host "Cleaning old files..."
     # Remove everything except .git directory
     Get-ChildItem -Force | Where-Object { $_.Name -ne ".git" } | Remove-Item -Recurse -Force
 }
 
-# Copy new site files
-Write-Host "Copying new site files..."
-Copy-Item -Recurse -Force public/* . 
-Remove-Item -Recurse -Force public  
+# Copy the preserved public folder contents to root
+Write-Host "Copying site files from public folder..."
+Copy-Item -Path "$tempPath\*" -Destination "." -Recurse
+Remove-Item -Recurse -Force $tempPath
 
 # Commit and push
 Write-Host "Committing changes..."
