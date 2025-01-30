@@ -1,0 +1,16 @@
+# Ignore Hugo's public directory (build output)
+public/
+
+# Ignore content from specific directories (e.g., drafts or private notes)
+content/drafts/
+content/private/
+
+# Ignore node_modules (if using a front-end build system)
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore config files with sensitive data (e.g., keys, passwords)
+config.yaml
+config.toml
