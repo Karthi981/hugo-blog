@@ -1,4 +1,5 @@
 name: Publish to GH Pages
+
 on:
   push:
     branches:
@@ -8,37 +9,28 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout source
-        uses: actions/checkout@v3
-        with:
-          submodules: true
 
-      - name: Checkout destination
-        uses: actions/checkout@v3
-        if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
-          ref: gh-pages
-          path: built-site
+          submodules: true # Ensures themes are included
+          fetch-depth: 0 # Fetch all history for proper Hugo module handling
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest' # Ensures the latest version
+          hugo-version: 'latest' # Always fetch latest Hugo version
           extended: true # Required for SCSS/Sass support
-        run: |
-          curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.110.0/hugo_extended_0.110.0_linux-amd64.tar.gz'
-          tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo
-      - name: Build
-        run: ${RUNNER_TEMP}/hugo
 
-      - name: Deploy
+      - name: Build Site
+        run: hugo --minify
+
+      - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
-        run: |
-          cp -R public/* ${GITHUB_WORKSPACE}/built-site/
-          cd ${GITHUB_WORKSPACE}/built-site
-          git add .
-          git config user.name 'karthi'
-          git config user.email 'karkartgh@gmail.com'
-          git commit -m 'Updated site'
-          git push
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          commit_message: "Automated deployment: $(date -u +'%Y-%m-%d %H:%M:%S')"
+          force_orphan: true # Ensures only the latest build is kept
