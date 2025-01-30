@@ -1,4 +1,4 @@
-baseURL = "https://yourgithubusername.github.io/"
+baseURL = "https://karthi981.github.io/hugo-blog/"
 languageCode = "en-us"
 title = "Blog-OS"
 theme = "PaperMod"
