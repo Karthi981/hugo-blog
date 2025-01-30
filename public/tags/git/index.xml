@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Git on Blog-OS</title>
+    <link>http://localhost:1313/hugo-blog/tags/git/</link>
+    <description>Recent content in Git on Blog-OS</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jan 2025 12:07:24 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/hugo-blog/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Deployment: Via Github pages and workflows</title>
+      <link>http://localhost:1313/hugo-blog/posts/github-actions/</link>
+      <pubDate>Thu, 30 Jan 2025 12:07:24 +0530</pubDate>
+      <guid>http://localhost:1313/hugo-blog/posts/github-actions/</guid>
+      <description>&lt;h1 id=&#34;hugo-deployment-via-github-pages-and-workflows&#34;&gt;Hugo Deployment: Via Github pages and workflows&lt;/h1&gt;
+&lt;p&gt;Hugo is a powerful static site generator that allows you to create fast, customizable websites with ease. In this guide, we’ll walk through installing Hugo, setting up the PaperMod theme, and deploying your site to GitHub Pages.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-deploy-to-github-pages&#34;&gt;1. Deploy to GitHub Pages&lt;/h2&gt;
+&lt;h3 id=&#34;step-0-create-a-new-branch-in-the-repository&#34;&gt;&lt;strong&gt;Step 0: Create a new branch in the repository&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Manually add the gh-pages branch to the repository; otherwise the github actions will throw an error&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
