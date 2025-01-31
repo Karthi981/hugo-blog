@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   min-height: 220px;
-  background-color: white;
+  background: var(--entry);
   padding: 1.5rem 1.5rem;
   margin: var(--gap) 0 calc(var(--gap) * 2) 0;
   border-radius: var(--radius);

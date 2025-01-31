@@ -1,15 +1,15 @@
 +++
 date = '2025-01-30T12:07:24+05:30'
-title = 'Hugo Made Easy: Install, Theme:PaperMod & GitHub Pages Deployment'
-author = 'Karthik Raja'
+title = 'Hugo Made Easy: Install, Theme:PaperMod'
+author = 'Karthi Raja'
 tags = ['Hugo', 'Theme', 'PaperMod', 'GitHub Pages']
 categories = ['Tech', 'Tutorial']
 email = 'karthikraja@gmail.com'
 +++
 
-# Hugo Made Easy: Install, Theme: PaperMod & GitHub Pages Deployment
+# Hugo Made Easy: Install, Theme: PaperMod
 
-Hugo is a powerful static site generator that allows you to create fast, customizable websites with ease. In this guide, we’ll walk through installing Hugo, setting up the PaperMod theme, and deploying your site to GitHub Pages.
+Hugo is a powerful static site generator that allows you to create fast, customizable websites with ease. In this guide, we’ll walk through installing Hugo, setting up the PaperMod theme, and running the site locally.
 
 ---
 
@@ -76,9 +76,11 @@ Or download the theme from [GitHub](https://github.com/adityatelange/hugo-PaperM
 
 ---
 
-## 4. Configure `config.toml`
+## 4. Configure `hugo.toml`
 
-Open `config.toml` and add:
+Open `hugo.toml` and add:
+
+Note : You can also configure the theme in the `config.toml` file in previous versions of Hugo.
 
 ```toml
 baseURL = 'https://yourgithubusername.github.io/'
@@ -92,7 +94,7 @@ theme = 'PaperMod'
   TocOpen = true
 ```
 
-Modify the `baseURL` with your actual GitHub username.
+Modify the `baseURL` with your actual GitHub username namely `https://username.github.io/`.
 
 ---
 
@@ -125,48 +127,3 @@ hugo server -D
 Visit **http://localhost:1313/** to preview your site.
 
 ---
-
-## 7. Deploy to GitHub Pages
-
-### **Step 1: Initialize a Git Repository**
-
-```sh
-git init
-git branch -M main
-git remote add origin https://github.com/yourgithubusername/myblog.git
-```
-
-### **Step 2: Generate Static Files**
-
-```sh
-hugo -t PaperMod
-```
-
-This creates a `public/` folder with the generated site.
-
-### **Step 3: Deploy to GitHub Pages**
-
-```sh
-cd public
-git init
-git add .
-git commit -m "Deploy site"
-git branch -M main
-git remote add origin https://github.com/yourgithubusername/yourgithubusername.github.io.git
-git push -f origin main
-```
-
-Replace `yourgithubusername` with your GitHub username.
-
----
-
-## 8. Enable GitHub Pages
-
-1. Go to **Settings** → **Pages** in your GitHub repository.
-2. Select **Deploy from branch** and choose `main` under `public`.
-3. Click **Save**.
-4. Your site will be live at `https://yourgithubusername.github.io/`.
-
----
-
-### 🎉 Your Hugo site is live with PaperMod! 🚀
