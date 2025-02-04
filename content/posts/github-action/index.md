@@ -2,7 +2,7 @@
 date = '2025-01-30T12:07:24+05:30'
 title = 'Hugo Deployment: Via Github pages and workflows'
 author = 'Karthik Raja'
-tags = ['Git', 'GitHub', 'GitHib Pages']
+tags = ['Git', 'GitHub', 'GitHub Pages']
 categories = ['Tech', 'Tutorial']
 email = 'karthikraja@gmail.com'
 +++

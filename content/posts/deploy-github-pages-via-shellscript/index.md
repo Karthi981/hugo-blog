@@ -2,7 +2,7 @@
 date = '2025-01-30T12:07:24+05:30'
 title = 'Hugo Deployment: Via Shell Script & Github Pages manually'
 author = 'Karthik Raja'
-tags = ['Git', 'GitHub', 'GitHib Pages' , 'Shell Script']
+tags = ['Git', 'GitHub', 'GitHub Pages' , 'Shell Script']
 categories = ['Tech', 'Tutorial']
 email = 'karthikraja@gmail.com'
 draft = true
