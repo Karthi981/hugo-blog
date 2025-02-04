@@ -99,6 +99,8 @@ jobs:
 2. Navigate to **Settings > Pages**.
 3. Under **Branch**, select `gh-pages` and click **Save**.
 
+![Settings Page](./github-pages-settings.png)
+
 ---
 
 ### **How This Workflow Works**
