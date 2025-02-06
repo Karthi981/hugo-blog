@@ -24,7 +24,23 @@ To run Deepseek AI locally, follow these steps:
 docker --version
 ```
 
-If any error occurs, when checking the version, try editing your environment variables with the PATH variable.Usually it should be resolved by adding `C:/ProgramFiles/Docker/Docker/resources/bin` to the PATH variable.
+If any error occurs, when checking the version, try editing your environment variables with the PATH variable.Usually it should be resolved by adding `C:/ProgramFiles/Docker/Docker/resources/bin`and `C:\ProgramData\DockerDesktop\version-bin` to the PATH variable.
+
+![Environment Variables](./images/edit-environmental-variables.png)
+
+Search for edit environment variables and click on it.
+
+![Edit Path Variable](./images/edit-path-variable.png)
+
+On the Popup window, click on Environment Variables and click on Path under User Variables.And edit the PATH variable to include the path of Docker.
+
+```bash
+C:/ProgramFiles/Docker/Docker/resources/bin
+
+
+C:\ProgramData\DockerDesktop\version-bin
+
+```
 
 2. Pull the OpenWebUI image using docker:
 
@@ -74,7 +90,6 @@ Congratulations! You have successfully run Deepseek AI locally and also run it i
 
 ### 📌 **Additional Resources:**
 
-- Official OpenWebUI Documentation: [Click Here](https://github.com/Open-AI-Collective/open-webui/blob/main/docs/README.md)
-- Official OpenWebUI GitHub Repository: [Click Here](https://github.com/Open-AI-Collective/open-webui)
-- Official OpenWebUI DockerHub Repository: [Click Here](https://hub.docker.com/r/ghcr.io/open-webui/open-webui)
-- ngrok Installation Guide: [Click Here](https://ngrok.com/download)
+- Official OpenWebUI Documentation: [Click Here](https://github.com/open-webui/open-webui/blob/main/README.md)
+- Official OpenWebUI GitHub Repository: [Click Here](https://github.com/open-webui/open-webui)
+- ngrok Installation Guide: [Click Here](https://ngrok.com/docs)
