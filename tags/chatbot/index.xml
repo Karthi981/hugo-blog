@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Chatbot on Blog-OS</title><link>https://karthi981.github.io/hugo-blog/tags/chatbot/</link><description>Recent content in Chatbot on Blog-OS</description><generator>Hugo -- 0.143.1</generator><language>en-us</language><lastBuildDate>Tue, 04 Feb 2025 08:07:24 +0530</lastBuildDate><atom:link href="https://karthi981.github.io/hugo-blog/tags/chatbot/index.xml" rel="self" type="application/rss+xml"/><item><title>Deepseek AI: How to Run It Locally on Your PC in 10 Minutes</title><link>https://karthi981.github.io/hugo-blog/posts/deepseek-ai-run-locally/</link><pubDate>Tue, 04 Feb 2025 08:07:24 +0530</pubDate><guid>https://karthi981.github.io/hugo-blog/posts/deepseek-ai-run-locally/</guid><description>&lt;h1 id="why-choose-deepseek-ai">Why Choose Deepseek AI?&lt;/h1>
+&lt;p>Deepseek AI is a free, open-source AI-powered chatbot that functions similarly to ChatGPT. It is known for its efficiency, lightweight deployment, and affordability, making it a great open-source alternative to ChatGPT. Key advantages include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Affordability&lt;/strong>: Free and open-source, making it accessible to everyone.&lt;/li>
+&lt;li>&lt;strong>Performance&lt;/strong>: Focuses on reasoning and explainability.&lt;/li>
+&lt;li>&lt;strong>Customizability&lt;/strong>: Models can be fine-tuned for various applications.&lt;/li>
+&lt;li>&lt;strong>Privacy&lt;/strong>: Can be run locally without data leaving your machine.&lt;/li>
+&lt;/ul>
+&lt;h2 id="getting-started-with-installation">Getting Started with Installation&lt;/h2>
+&lt;p>To run Deepseek AI locally, we need &lt;strong>Ollama&lt;/strong>, a free and open-source tool designed for running large language models (LLMs) on personal computers with minimal effort.&lt;/p></description></item><item><title>Deepseek AI: How to Run It Locally on Your PC with OpenWebUI and also use it in your smartphone?</title><link>https://karthi981.github.io/hugo-blog/posts/deepseek-ai-run-with-openwebui/</link><pubDate>Tue, 04 Feb 2025 08:07:24 +0530</pubDate><guid>https://karthi981.github.io/hugo-blog/posts/deepseek-ai-run-with-openwebui/</guid><description>&lt;h2 id="what-is-openwebui">What is openwebui?&lt;/h2>
+&lt;p>OpenWebUI is a web interface for running OpenAI&amp;rsquo;s API locally. It allows you to interact with OpenAI&amp;rsquo;s API without having to install any software on your computer. You can use it to run your own chatbots, generate images, and more.&lt;/p>
+&lt;h2 id="how-to-run-deepseek-ai-locally-and-run-it-in-your-smartphone-via-ngrok">How to Run Deepseek AI Locally and run it in your smartphone via ngrok?&lt;/h2>
+&lt;p>To run Deepseek AI locally, follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>Install Docker: You can download and install Docker from the official website. Once installed, you can verify the installation by running the following command in your terminal:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>docker --version
+&lt;/code>&lt;/pre>&lt;p>If any error occurs, when checking the version, try editing your environment variables with the PATH variable.Usually it should be resolved by adding &lt;code>C:/ProgramFiles/Docker/Docker/resources/bin&lt;/code>and &lt;code>C:\ProgramData\DockerDesktop\version-bin&lt;/code> to the PATH variable.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Hugo on Blog-OS</title><link>https://karthi981.github.io/hugo-blog/tags/hugo/</link><description>Recent content in Hugo on Blog-OS</description><generator>Hugo -- 0.143.1</generator><language>en-us</language><lastBuildDate>Thu, 30 Jan 2025 12:07:24 +0530</lastBuildDate><atom:link href="https://karthi981.github.io/hugo-blog/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Made Easy: Install, Theme:PaperMod</title><link>https://karthi981.github.io/hugo-blog/posts/hugo-setup/</link><pubDate>Thu, 30 Jan 2025 12:07:24 +0530</pubDate><guid>https://karthi981.github.io/hugo-blog/posts/hugo-setup/</guid><description>&lt;h1 id="hugo-made-easy-install-theme-papermod">Hugo Made Easy: Install, Theme: PaperMod&lt;/h1>
+&lt;p>Hugo is a powerful static site generator that allows you to create fast, customizable websites with ease. In this guide, we’ll walk through installing Hugo, setting up the PaperMod theme, and running the site locally.&lt;/p>
+&lt;hr>
+&lt;h2 id="1-install-hugo-extended-version">1. Install Hugo (Extended Version)&lt;/h2>
+&lt;h3 id="windows">&lt;strong>Windows&lt;/strong>&lt;/h3>
+&lt;h4 id="using-chocolatey-recommended">&lt;strong>Using Chocolatey (Recommended)&lt;/strong>&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-powershell" data-lang="powershell">&lt;span style="display:flex;">&lt;span>choco install hugo-extended -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="manual-installation">&lt;strong>Manual Installation&lt;/strong>&lt;/h4>
+&lt;ol>
+&lt;li>Download the latest &lt;strong>Hugo Extended&lt;/strong> version from &lt;a href="https://github.com/gohugoio/hugo/releases">GitHub Releases&lt;/a>.&lt;/li>
+&lt;li>Extract the archive and place &lt;code>hugo.exe&lt;/code> in a folder within your system PATH (e.g., &lt;code>C:\Program Files\Hugo&lt;/code>).&lt;/li>
+&lt;li>Verify installation:
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-powershell" data-lang="powershell">&lt;span style="display:flex;">&lt;span>hugo version
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;h3 id="macos">&lt;strong>MacOS&lt;/strong>&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>brew install hugo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="linux-debianubuntu">&lt;strong>Linux (Debian/Ubuntu)&lt;/strong>&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>sudo apt update &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> sudo apt install hugo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Verify the installation:&lt;/p></description></item></channel></rss>
