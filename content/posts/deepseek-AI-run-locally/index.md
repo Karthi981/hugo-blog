@@ -114,12 +114,12 @@ Deepseek AI models are trained on vast amounts of textual data, including books,
 
 ## Final Thoughts
 
-Deepseek AI is an excellent alternative to proprietary AI chatbots. With its lightweight nature and customizable models, it offers a powerful tool for individuals and businesses alike. By following these simple steps, you can start running Deepseek AI on your PC in just **10 minutes**.
+Deepseek AI is an excellent alternative to proprietary AI chatbots. With its lightweight nature and customizable models, it offers a powerful tool for individuals and businesses alike. By following these simple steps, you can start running Deepseek AI on your PC in your smartphone.
 
 ---
 
 ### 📌 **Additional Resources:**
 
 - Official Deepseek AI Library: [Click Here](https://ollama.com/library/deepseek-r1)
-- Ollama Installation Guide: [Click Here](https://ollama.com/docs/installation)
+- Ollama Installation Guide: [Click Here](https://ollama.com/)
 - Deepseek AI GitHub Repository: [Click Here](https://github.com/deepseek-ai)
